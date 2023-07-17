@@ -24,4 +24,13 @@ describe("Interface", () => {
 
     expect(add(2, 2)).toBe(4);
   });
+
+  it("Should support indexable interface", function () {
+    interface StringArray {
+      [index: number]: string;
+    }
+
+    const names: StringArray = ["Hafiz", "Aziz", "Lexa"];
+    console.info(names);
+  });
 });
