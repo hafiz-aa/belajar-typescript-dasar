@@ -80,4 +80,22 @@ describe("Interface", () => {
 
     console.info(person.sayHello("Budi"));
   });
+
+  it("Should support intersection type", function () {
+    interface HasName {
+      name: string;
+    }
+
+    interface HasId {
+      id: string;
+    }
+
+    type Domain = HasId & HasName;
+
+    const domain: Domain = {
+      id: "1",
+      name: "Hafiz",
+    };
+    console.info(domain);
+  });
 });
