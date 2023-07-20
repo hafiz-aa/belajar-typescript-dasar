@@ -58,5 +58,13 @@ describe("Interface", () => {
         };
         console.info(domain);
     });
+    it("Should support type assertion", function () {
+        const person = {
+            name: "Hafiz",
+            age: 28,
+        };
+        const person2 = person;
+        console.info(person2);
+    });
 });
 export {};
