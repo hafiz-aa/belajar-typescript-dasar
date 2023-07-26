@@ -14,4 +14,21 @@ describe("Loop", () => {
       console.info(names[index]);
     }
   });
+
+  it("Should support while loop statement", function () {
+    let counter: number = 0;
+    while (counter < 10) {
+      console.info(counter);
+      counter++;
+    }
+  });
+
+  it("Should support do while loop statement", function () {
+    let counter: number = 0;
+
+    do {
+      console.info(counter);
+      counter++;
+    } while (counter < 10);
+  });
 });
