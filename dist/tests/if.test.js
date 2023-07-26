@@ -12,4 +12,9 @@ describe("If Statement", () => {
             console.info("Try Again");
         }
     });
+    it("Should support tenary operator", function () {
+        const value = 80;
+        const say = value >= 75 ? "Congratulation" : "Good";
+        console.info(say);
+    });
 });
